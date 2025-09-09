@@ -1,0 +1,27 @@
+{
+  "name": "odin-inventory-application",
+  "version": "1.0.0",
+  "description": "The Odin Project: Inventory Application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch app",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IBN12/odin-inventory-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IBN12/odin-inventory-application/issues"
+  },
+  "homepage": "https://github.com/IBN12/odin-inventory-application#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
