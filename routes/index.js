@@ -1,18 +1,9 @@
 import express from "express"; 
 
-import db from "../models/queries.js";
+import controllers from "../controllers/gameInventoryController.js"; 
 
 const indexRouter = express.Router(); 
 
-async function GetAllGames(){
-    return await db.GetAllGameData();
-}
-
-indexRouter.get("/", (req, res) => {
-    res.status(200).render("index", {
-        title: "SoSu Inventory Application",
-        gameInventoryRows: GetAllGames(),
-    });
-});
+indexRouter.get("/", controllers.gameInventoryControllerGet);
 
 export default indexRouter; 
